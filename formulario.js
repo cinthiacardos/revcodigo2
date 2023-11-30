@@ -2,7 +2,7 @@ var formulario = document.querySelector("#form")
 
 document.getElementById ("formulario").onsubmit = function(e) { // El codigo no esta bien formulario ya que le faltaba llamar a la funcion GetElementById. se modifico.
 
-  e.prevent();
+ e.preventDefault(); // para la funcion e.event falta el default
   
   var n = formulario.elements[0]; // se le agrego el punto y coma
   var e = formulario.elements[1]; // se le agrego el punto y coma
